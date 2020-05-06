@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<div id="petsRow" class="row">
+    <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Bank</h3>
+            </div>
+            <div class="panel-body">
+                <h4>Balance</h4>
+                <strong>Balance</strong>: <span id="bankBalance"></span> ETH<br/><br/>
+                <h4>Set Game</h4>
+                <input type="text" class="form-control" id="betAmount" placeholder="Amount(ether)" />
+                <button class="btn btn-primary" id="startGame" type="button">Start Game</button><br/><br/>
+                <h4>Game Info</h4>
+                <p id="gameInfo">No game is going!</p><br/>
+                <h4>End Game</h4>
+                <button class="btn btn-primary" id="endGame" type="button">End Game</button>
+                <p id="endInfo"></p>
+                <br/>
+                <h4>Records</h4>
+                <button class="btn btn-primary" id="getRecord" type="button">Get Records</button>
+                <p id="tranInfo"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

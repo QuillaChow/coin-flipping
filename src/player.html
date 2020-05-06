@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<div id="petsRow" class="row">
+    <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Player</h3>
+            </div>
+            <div class="panel-body">
+                <h4>Balance</h4>
+                <strong>Balance</strong>: <span id="playerBalance"></span> ETH<br/><br/>
+                <h4>Game Info</h4>
+                <p id="gameInfo"></p><br/><br/>
+                <button class="btn btn-primary" id="joinGame" type="button">Join Game</button><br/><br/>
+                <h4>Round One</h4>
+                <input type="text" class="form-control" id="betNum1" placeholder="Bet Number(Round One)" />
+                <button class="btn btn-primary" id="random" type="button">Generate</button>
+                <button class="btn btn-primary" id="computeHash" type="button">Get Hash</button><br/>
+                <input type="text" class="form-control" id="hashValue" placeholder="Bet Hash(Round One)" />
+                <input type="text" class="form-control" id="betAmount" placeholder="Bet Amount(ETH)" />
+                <button class="btn btn-primary" id="sendHash" type="button">Send Bet</button><br/><br/>
+                <h4>Round Two</h4>
+                <input type="text" class="form-control" id="betNum2" placeholder="Bet Number(Round Two)" />
+                <button class="btn btn-primary" id="sendNumber" type="button">Send Number</button><br/><br/>
+                <h4>Records</h4>
+                <button class="btn btn-primary" id="getRecord" type="button">Get Records</button>
+                <p id="tranInfo"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>
