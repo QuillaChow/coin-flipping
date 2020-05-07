@@ -1,6 +1,7 @@
 # Coin-Flipping
 
 Coin-Flipping is a DApp for playing coin game online.
+&nbsp;
 ![avatar](https://s1.ax1x.com/2020/05/07/YZNU00.png)
 
 ## Requirements
