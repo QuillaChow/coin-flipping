@@ -1,8 +1,9 @@
 # Coin-Flipping
 
-Coin-Flipping is a DApp for playing coin game online.
-&nbsp;
-![avatar](https://s1.ax1x.com/2020/05/07/YZNU00.png)
+Coin-Flipping is a DApp for playing coin game online. 
+This application allows two or more participants to play a coin-flipping game fairly and transfer funds to each other safely by using Ethereum.
+In the first round, each participant need to send the amount and the hash value of the bet number to the contract. In the second round, each participant need to send their initial bet number to the contract.
+
 
 ## Requirements
 
